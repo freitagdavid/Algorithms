@@ -9,9 +9,10 @@ plays = ['rock', 'paper', 'scissors']
 def rock_paper_scissors(n):
     working_output = itertools.product(plays, repeat=n)
     output = []
-    for i in working_output:
-        output.append(list(i))
-    return output
+    return [list(i) for i in working_output]
+    # for i in working_output:
+    #     output.append(list(i))
+    # return output
 
 
 if __name__ == "__main__":
